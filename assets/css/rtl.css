@@ -1,0 +1,98 @@
+/* RTL Overrides for AirForge */
+/* Triggered by dir="rtl" on html or .rtl on body */
+
+[dir="rtl"], .rtl {
+  direction: rtl;
+  text-align: right;
+}
+
+[dir="rtl"] .drawer, .rtl .drawer {
+  right: auto;
+  left: -340px;
+  border-left: none;
+  border-right: 1px solid var(--color-border);
+}
+
+[dir="rtl"] body.drawer-open .drawer, .rtl body.drawer-open .drawer {
+  transform: translateX(340px);
+}
+
+@media (max-width: 400px) {
+  [dir="rtl"] .drawer, .rtl .drawer {
+    left: -100%;
+  }
+  [dir="rtl"] body.drawer-open .drawer, .rtl body.drawer-open .drawer {
+    transform: translateX(100%);
+  }
+}
+
+/* Decorative rules that point left-to-right need mirroring */
+[dir="rtl"] .eyebrow::before,
+[dir="rtl"] .eyebrow.is-center::after {
+  transform: scaleX(-1);
+}
+
+[dir="rtl"] .process-arrow svg,
+[dir="rtl"] .btn svg,
+[dir="rtl"] .scroll-cue {
+  transform: scaleX(-1);
+}
+
+[dir="rtl"] .scroll-progress {
+  left: auto;
+  right: 0;
+}
+
+[dir="rtl"] .footer-links a:hover {
+  padding-left: 0;
+  padding-right: 4px;
+}
+
+[dir="rtl"] .quote-mark {
+  right: auto;
+  left: 1.25rem;
+}
+
+[dir="rtl"] .form-group {
+  text-align: right;
+}
+
+[dir="rtl"] select.form-control {
+  background-position: left 1rem center;
+  padding-right: 1.1rem;
+  padding-left: 2.75rem;
+}
+
+/* The configurator and schematic read left-to-right by design */
+[dir="rtl"] .configurator,
+[dir="rtl"] .anatomy,
+[dir="rtl"] .cfg-flow,
+[dir="rtl"] .anatomy-svg {
+  direction: ltr;
+}
+
+[dir="rtl"] .cfg-panel,
+[dir="rtl"] .cfg-results,
+[dir="rtl"] .anatomy-detail,
+[dir="rtl"] .anatomy-stage {
+  direction: rtl;
+}
+
+[dir="rtl"] .cfg-option {
+  align-items: flex-end;
+  text-align: right;
+}
+
+/* Service block alternating trick needs to reverse in RTL */
+[dir="rtl"] .service-block:nth-child(even) {
+  direction: ltr;
+}
+[dir="rtl"] .service-block:nth-child(even) > * {
+  direction: rtl;
+}
+
+@media (max-width: 768px) {
+  [dir="rtl"] .service-block:nth-child(even) {
+    direction: rtl;
+  }
+}

@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AirForge | Industrial Ventilation & Dust Collection Systems</title>
+  <meta name="description" content="Engineered air-quality infrastructure for factories and industrial facilities. Dust collection, fume extraction, and ventilation systems.">
+
+  <!-- CSS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/rtl.css">
+
+  <!-- Preload Theme -->
+  <script>
+    const storedTheme = localStorage.getItem('theme');
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    if (storedTheme === 'dark' || (!storedTheme && prefersDark)) {
+      document.documentElement.setAttribute('data-theme', 'dark');
+    }
+  </script>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="container">
+      <a href="index.html" class="navbar-brand">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20"></path><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+        AirForge
+      </a>
+
+      <nav class="navbar-nav">
+        <a href="index.html" class="nav-link active">Home</a>
+        <a href="home2.html" class="nav-link">Home 2</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="case-studies.html" class="nav-link">Case Studies</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="navbar-actions">
+        <button class="btn-icon theme-toggle" aria-label="Toggle Theme">
+          <!-- Icon injected by JS -->
+        </button>
+        <button class="btn-icon rtl-toggle" aria-label="Toggle RTL">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 3l4 4-4 4"></path><path d="M3 17l4 4-4-4"></path><path d="M21 7H7a4 4 0 0 0-4 4v0"></path><path d="M3 17h14a4 4 0 0 0 4-4v0"></path></svg>
+        </button>
+        <a href="request-consultation.html" class="btn btn-primary d-none-mobile">Request a Consultation</a>
+
+        <button class="hamburger" aria-label="Open Menu">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="drawer-overlay"></div>
+  <div class="drawer">
+    <div class="drawer-header">
+      <div class="navbar-brand">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20"></path><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+        AirForge
+      </div>
+      <button class="btn-icon drawer-close" aria-label="Close Menu">
+        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      </button>
+    </div>
+
+    <nav class="drawer-nav">
+      <a href="index.html" class="nav-link active">Home</a>
+      <a href="home2.html" class="nav-link">Home 2</a>
+      <a href="services.html" class="nav-link">Services</a>
+      <a href="case-studies.html" class="nav-link">Case Studies</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+    </nav>
+
+    <div class="drawer-actions">
+      <div class="drawer-controls">
+        <button class="btn-icon theme-toggle" aria-label="Toggle Theme"></button>
+        <button class="btn-icon rtl-toggle" aria-label="Toggle RTL">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 3l4 4-4 4"></path><path d="M3 17l4 4-4-4"></path><path d="M21 7H7a4 4 0 0 0-4 4v0"></path><path d="M3 17h14a4 4 0 0 0 4-4v0"></path></svg>
+        </button>
+      </div>
+      <a href="request-consultation.html" class="btn btn-primary" style="width: 100%;">Request a Consultation</a>
+    </div>
+  </div>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="hero-bg"></div>
+      <div class="hero-orb orb-1"></div>
+      <div class="hero-orb orb-2"></div>
+
+      <div class="container">
+        <div class="hero-badge animate-fade-up">
+          <span class="dot"></span>
+          <b>Now Deploying</b>
+          OSHA silica &amp; combustible dust compliance systems
+        </div>
+
+        <h1 class="animate-fade-up delay-100">Engineered <span class="text-gradient">Air Quality</span> Infrastructure</h1>
+
+        <p class="text-lead animate-fade-up delay-200">Industrial ventilation, heavy-duty dust collection, and compliance-driven airflow systems for modern manufacturing and fabrication facilities.</p>
+
+        <div class="hero-actions animate-fade-up delay-300">
+          <a href="request-consultation.html" class="btn btn-primary btn-lg">
+            Request an Engineering Consultation
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </a>
+          <a href="#configurator" class="btn btn-outline btn-lg">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="21" x2="4" y2="14"></line><line x1="4" y1="10" x2="4" y2="3"></line><line x1="12" y1="21" x2="12" y2="12"></line><line x1="12" y1="8" x2="12" y2="3"></line><line x1="20" y1="21" x2="20" y2="16"></line><line x1="20" y1="12" x2="20" y2="3"></line><line x1="1" y1="14" x2="7" y2="14"></line><line x1="9" y1="8" x2="15" y2="8"></line><line x1="17" y1="16" x2="23" y2="16"></line></svg>
+            Size My System
+          </a>
+        </div>
+
+        <div class="hero-trust animate-fade-up delay-400">
+          <div>
+            <div class="stat-value"><span data-count="150" data-count-suffix="+">0</span></div>
+            <div class="stat-label">Facilities Upgraded</div>
+          </div>
+          <div>
+            <div class="stat-value"><span data-count="99.99" data-count-decimals="2" data-count-suffix="%">0</span></div>
+            <div class="stat-label">Capture Efficiency</div>
+          </div>
+          <div>
+            <div class="stat-value"><span data-count="15" data-count-suffix="+">0</span></div>
+            <div class="stat-label">Years In Service</div>
+          </div>
+          <div>
+            <div class="stat-value">24/7</div>
+            <div class="stat-label">Emergency Support</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="scroll-cue">
+        <span>Scroll</span>
+        <span class="line"></span>
+      </div>
+    </section>
+
+    <!-- Sector marquee -->
+    <section style="padding-top: var(--space-4); padding-bottom: var(--space-4);">
+      <div class="container">
+        <p style="text-align: center; font-family: var(--font-mono); font-size: 0.7rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--color-text-muted); margin-bottom: var(--space-2);">Deployed across regulated industry</p>
+        <div class="marquee">
+          <div class="marquee-track">
+            <span class="marquee-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 20h20"></path><path d="M4 20V8l8-5 8 5v12"></path></svg> Aerospace Manufacturing</span>
+            <span class="marquee-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"></circle><path d="M12 3v18M3 12h18"></path></svg> Automotive Assembly</span>
+            <span class="marquee-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"></path></svg> Heavy Fabrication</span>
+            <span class="marquee-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"></rect><path d="M3 9h18M9 21V9"></path></svg> Bulk Processing</span>
+            <span class="marquee-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l9 5v10l-9 5-9-5V7z"></path></svg> Pharmaceutical</span>
+            <span class="marquee-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21h18M6 21V8l6-5 6 5v13"></path></svg> Industrial Woodworking</span>
+            <!-- duplicate set keeps the loop seamless -->
+            <span class="marquee-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 20h20"></path><path d="M4 20V8l8-5 8 5v12"></path></svg> Aerospace Manufacturing</span>
+            <span class="marquee-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"></circle><path d="M12 3v18M3 12h18"></path></svg> Automotive Assembly</span>
+            <span class="marquee-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"></path></svg> Heavy Fabrication</span>
+            <span class="marquee-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"></rect><path d="M3 9h18M9 21V9"></path></svg> Bulk Processing</span>
+            <span class="marquee-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l9 5v10l-9 5-9-5V7z"></path></svg> Pharmaceutical</span>
+            <span class="marquee-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21h18M6 21V8l6-5 6 5v13"></path></svg> Industrial Woodworking</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Air Quality Solutions Overview -->
+    <section class="bg-surface">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow is-center">Core Solutions</span>
+          <h2>Built for continuous heavy-industrial duty</h2>
+          <p>We design, implement, and maintain high-capacity air filtration systems that run around the clock without babysitting.</p>
+        </div>
+
+        <div class="grid grid-3">
+          <!-- Solution 1 -->
+          <div class="card">
+            <svg class="card-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"></path><polyline points="14 2 14 8 20 8"></polyline><path d="M8 13h2"></path><path d="M8 17h2"></path><path d="M14 13h2"></path><path d="M14 17h2"></path></svg>
+            <h3>Dust Collection</h3>
+            <p>High-volume particulate capture systems tailored for woodworking, metalworking, and bulk material handling facilities.</p>
+            <div class="card-footer">
+              <span class="text-spec">CFD Modeled</span>
+            </div>
+          </div>
+          <!-- Solution 2 -->
+          <div class="card">
+            <svg class="card-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20"></path><path d="M4.9 4.9l14.2 14.2"></path><path d="M19.1 4.9L4.9 19.1"></path></svg>
+            <h3>Fume Extraction</h3>
+            <p>Source-capture welding fume and chemical vapor extraction ensuring OSHA/EPA compliance and operator safety.</p>
+            <div class="card-footer">
+              <span class="text-spec">HEPA filtration options</span>
+            </div>
+          </div>
+          <!-- Solution 3 -->
+          <div class="card">
+            <svg class="card-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"></path></svg>
+            <h3>Ventilation Design</h3>
+            <p>Complete facility airflow balancing, makeup air systems, and negative pressure engineering for hazard containment.</p>
+            <div class="card-footer">
+              <span class="text-spec">ASHRAE compliant</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         INTERACTIVE: Airflow Sizing Configurator
+         ====================================================================== -->
+    <section id="configurator">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow is-center">Interactive Tool</span>
+          <h2>Size your extraction system in seconds</h2>
+          <p>Set your facility profile and watch the engineering envelope update live — airflow volume, duct geometry, filter media, and service interval.</p>
+        </div>
+
+        <div class="configurator" id="airflowConfigurator">
+          <!-- Inputs -->
+          <div class="cfg-panel">
+            <div class="cfg-panel-head">
+              <h3>Facility Inputs</h3>
+              <span class="cfg-chip">Step 1 of 1</span>
+            </div>
+
+            <div class="cfg-field">
+              <div class="cfg-field-label">
+                <span>Application Profile</span>
+              </div>
+              <div class="cfg-options" role="group" aria-label="Application profile">
+                <button type="button" class="cfg-option is-active" data-profile="wood" aria-pressed="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M6 21V8l6-5 6 5v13"></path></svg>
+                  Woodworking
+                  <small>NFPA 664</small>
+                </button>
+                <button type="button" class="cfg-option" data-profile="metal" aria-pressed="false">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20"></path><path d="M4.9 4.9l14.2 14.2"></path><path d="M19.1 4.9L4.9 19.1"></path></svg>
+                  Metal &amp; Welding
+                  <small>Hex-chrome duty</small>
+                </button>
+                <button type="button" class="cfg-option" data-profile="powder" aria-pressed="false">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"></rect><path d="M3 9h18M9 21V9"></path></svg>
+                  Powder &amp; Bulk
+                  <small>NFPA 652</small>
+                </button>
+                <button type="button" class="cfg-option" data-profile="pharma" aria-pressed="false">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l9 5v10l-9 5-9-5V7z"></path></svg>
+                  Pharma &amp; Cleanroom
+                  <small>ISO 14644</small>
+                </button>
+              </div>
+            </div>
+
+            <div class="cfg-field">
+              <div class="cfg-field-label">
+                <span>Production Floor Area</span>
+                <span class="cfg-readout" id="cfgAreaOut">25,000 sq ft</span>
+              </div>
+              <input type="range" class="cfg-range" id="cfgArea" min="5000" max="120000" step="1000" value="25000" aria-label="Production floor area in square feet">
+              <div class="cfg-scale">
+                <span>5k</span><span>60k</span><span>120k sq ft</span>
+              </div>
+            </div>
+
+            <div class="cfg-field">
+              <div class="cfg-field-label">
+                <span>Capture Points</span>
+                <span class="cfg-readout" id="cfgPointsOut">12 pickup points</span>
+              </div>
+              <input type="range" class="cfg-range" id="cfgPoints" min="2" max="48" step="1" value="12" aria-label="Number of capture points">
+              <div class="cfg-scale">
+                <span>2</span><span>24</span><span>48 hoods</span>
+              </div>
+            </div>
+
+            <div class="cfg-field">
+              <div class="cfg-field-label">
+                <span>Operating Schedule</span>
+              </div>
+              <div class="cfg-toggle" role="group" aria-label="Operating schedule">
+                <button type="button" data-shifts="1" aria-pressed="false">1 Shift</button>
+                <button type="button" data-shifts="2" class="is-active" aria-pressed="true">2 Shifts</button>
+                <button type="button" data-shifts="3" aria-pressed="false">24 Hour</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Live output -->
+          <div class="cfg-results">
+            <div class="cfg-results-head">
+              <div>
+                <h3>Preliminary System Envelope</h3>
+                <p>Recalculated on every input change</p>
+              </div>
+              <span class="cfg-live"><i></i> Live</span>
+            </div>
+
+            <div class="cfg-hero-metric">
+              <span class="k">Total Required Airflow</span>
+              <span class="v"><span id="cfgCfm">0</span><span class="u">CFM</span></span>
+
+              <svg class="cfg-flow" viewBox="0 0 520 74" preserveAspectRatio="none" aria-hidden="true">
+                <defs>
+                  <linearGradient id="cfgFlowGrad" x1="0" y1="0" x2="1" y2="0">
+                    <stop offset="0%" stop-color="#fb923c"></stop>
+                    <stop offset="100%" stop-color="#ea580c"></stop>
+                  </linearGradient>
+                </defs>
+                <path class="duct-shell" d="M40 46 H200 Q240 46 260 30 Q280 14 320 14 H480"></path>
+                <path class="duct-stream" id="cfgStream" d="M40 46 H200 Q240 46 260 30 Q280 14 320 14 H480"></path>
+                <circle class="duct-node" cx="40" cy="46" r="9"></circle>
+                <circle class="duct-node" cx="260" cy="30" r="7"></circle>
+                <circle class="duct-node" cx="480" cy="14" r="9"></circle>
+                <text x="40" y="68" text-anchor="middle">Hood</text>
+                <text x="260" y="58" text-anchor="middle">Duct</text>
+                <text x="480" y="38" text-anchor="middle">Collector</text>
+              </svg>
+            </div>
+
+            <div class="cfg-metrics">
+              <div class="cfg-metric">
+                <span class="k">Main Duct Ø</span>
+                <span class="v"><span id="cfgDuct">0</span><small>in</small></span>
+              </div>
+              <div class="cfg-metric">
+                <span class="k">Transport Vel.</span>
+                <span class="v"><span id="cfgVelocity">0</span><small>fpm</small></span>
+              </div>
+              <div class="cfg-metric">
+                <span class="k">Filter Media</span>
+                <span class="v"><span id="cfgFilter">0</span><small>sq ft</small></span>
+              </div>
+              <div class="cfg-metric">
+                <span class="k">Fan Motor</span>
+                <span class="v"><span id="cfgPower">0</span><small>hp</small></span>
+              </div>
+              <div class="cfg-metric">
+                <span class="k">Trunk Runs</span>
+                <span class="v"><span id="cfgTrunks">0</span><small>&times; parallel</small></span>
+              </div>
+              <div class="cfg-metric">
+                <span class="k">Media Service</span>
+                <span class="v"><span id="cfgService">0</span><small>mo</small></span>
+              </div>
+              <div class="cfg-metric">
+                <span class="k">Est. Energy</span>
+                <span class="v">$<span id="cfgEnergy">0</span><small>k/yr</small></span>
+              </div>
+              <div class="cfg-metric">
+                <span class="k">Code Basis</span>
+                <span class="v" style="font-size: 1.05rem;"><span id="cfgCode">NFPA 664</span></span>
+              </div>
+            </div>
+
+            <div class="cfg-note">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path><line x1="12" y1="9" x2="12" y2="13"></line><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
+              <span>
+                <b id="cfgMedia">Spun-bond polyester, 80/20 blend</b>
+                <span id="cfgNote">Wood dust is combustible. Layout includes spark detection and an abort gate ahead of the collector.</span>
+              </span>
+            </div>
+
+            <div class="cfg-actions">
+              <a href="request-consultation.html" class="btn btn-primary">
+                Validate These Numbers
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </a>
+              <span class="cfg-disclaimer">Budgetary estimate only.<br>Final design follows a site audit.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- How It Works (Process) -->
+    <section class="bg-surface">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow is-center">Deployment Protocol</span>
+          <h2>Engineering-first, from audit to filter change</h2>
+          <p>A rigorous approach that starts with measurement and ends with a maintenance program you never have to chase.</p>
+        </div>
+
+        <div class="process-strip">
+          <div class="process-step">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 16 16 12 12 8"></polyline><line x1="8" y1="12" x2="16" y2="12"></line></svg>
+            01. Assess
+          </div>
+          <div class="process-arrow">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </div>
+          <div class="process-step">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+            02. Design
+          </div>
+          <div class="process-arrow">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </div>
+          <div class="process-step">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
+            03. Install
+          </div>
+          <div class="process-arrow">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </div>
+          <div class="process-step">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20"></path><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+            04. Maintain
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why AirForge -->
+    <section>
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow is-center">Industrial Credibility</span>
+          <h2>For facilities that cannot afford downtime</h2>
+          <p>Or safety violations, or a failed audit during a production run.</p>
+        </div>
+
+        <div class="grid grid-3">
+          <div class="card">
+            <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path><path d="M9 12l2 2 4-4"></path></svg>
+            <h3>OSHA / NFPA</h3>
+            <p>All ducting and extraction systems are engineered to strict compliance guidelines, protecting facilities from combustible dust hazards.</p>
+          </div>
+          <div class="card">
+            <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+            <h3>15+ Years</h3>
+            <p>Over a decade of successful deployments across aerospace, automotive, heavy fabrication, and bulk processing sectors.</p>
+          </div>
+          <div class="card">
+            <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
+            <h3>Turnkey Service</h3>
+            <p>From initial facility audits to final mechanical installation and lifetime filter replacement programs.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Case Study -->
+    <section class="bg-surface">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow is-center">Proven Results</span>
+          <h2>Recent upgrades, measured impact</h2>
+          <p>Every deployment is verified against pre-installation baseline readings.</p>
+        </div>
+
+        <div class="grid grid-2">
+          <div class="card" style="text-align: left; align-items: flex-start;">
+            <img src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&q=80&w=800" alt="Factory interior with heavy machinery" class="card-img" loading="lazy">
+            <div class="card-tags">
+              <span class="tag">Heavy Metal Fabrication</span>
+              <span class="tag">40,000 sq ft</span>
+            </div>
+            <h3>Ambient Weld Fume Control</h3>
+            <p style="margin-bottom: 1.5rem;">Deployed a central push-pull ventilation system across a 40,000 sq ft fabrication floor, replacing inefficient localized fans.</p>
+            <div style="background: var(--color-surface); padding: 1rem 1.25rem; border-radius: var(--radius); width: 100%; border: 1px solid var(--color-border); margin-bottom: 1.5rem;">
+              <div style="font-family: var(--font-mono); font-size: 0.7rem; letter-spacing: 0.14em; color: var(--color-accent); margin-bottom: 0.5rem; text-transform: uppercase;">Key Result</div>
+              <div style="font-weight: 500; color: var(--color-text-heading);">92% reduction in ambient particulate matter, zero OSHA citations in follow-up audit.</div>
+            </div>
+            <a href="case-studies.html" class="btn btn-outline">View All Case Studies</a>
+          </div>
+
+          <div class="card" style="text-align: left; align-items: flex-start;">
+            <img src="https://images.unsplash.com/photo-1565514020179-026b92b84bb6?auto=format&fit=crop&q=80&w=800" alt="Ductwork in industrial facility" class="card-img" loading="lazy">
+            <div class="card-tags">
+              <span class="tag">Industrial Woodworking</span>
+              <span class="tag">NFPA 664</span>
+            </div>
+            <h3>Combustible Dust Mitigation</h3>
+            <p style="margin-bottom: 1.5rem;">Engineered a closed-loop collection system with spark detection and abort gates for a high-volume milling facility.</p>
+            <div style="background: var(--color-surface); padding: 1rem 1.25rem; border-radius: var(--radius); width: 100%; border: 1px solid var(--color-border); margin-bottom: 1.5rem;">
+              <div style="font-family: var(--font-mono); font-size: 0.7rem; letter-spacing: 0.14em; color: var(--color-accent); margin-bottom: 0.5rem; text-transform: uppercase;">Key Result</div>
+              <div style="font-weight: 500; color: var(--color-text-heading);">Full NFPA 664 compliance while increasing overall system energy efficiency by 18%.</div>
+            </div>
+            <a href="case-studies.html" class="btn btn-outline">View All Case Studies</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- What Our Clients Say -->
+    <section>
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow is-center">Industry Endorsements</span>
+          <h2>Trusted by the teams that run the floor</h2>
+          <p>Facility managers, plant engineers, and safety officers who signed off on the result.</p>
+        </div>
+
+        <div class="grid grid-3">
+          <!-- Card 1 -->
+          <div class="quote-card" data-reveal>
+            <svg class="quote-mark" width="44" height="44" viewBox="0 0 24 24" fill="currentColor"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg>
+            <div class="stars">
+              <svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+              <svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+              <svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+              <svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+              <svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+            </div>
+            <p class="quote-body">"The level of technical expertise AirForge brought to our dust mitigation project was unmatched. They handled the entire installation with minimal disruption to our shift schedules."</p>
+            <div class="quote-author">
+              <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&w=150&h=150" alt="James L." loading="lazy">
+              <div>
+                <h4 style="margin-bottom: 0;">James L.</h4>
+                <div class="role">Facility Manager</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="quote-card" data-reveal>
+            <svg class="quote-mark" width="44" height="44" viewBox="0 0 24 24" fill="currentColor"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg>
+            <div class="stars">
+              <svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+              <svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+              <svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+              <svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+              <svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+            </div>
+            <p class="quote-body">"We required a custom filtration solution for a highly corrosive environment. AirForge delivered a robust system that exceeded all our performance metrics."</p>
+            <div class="quote-author">
+              <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=150&h=150" alt="Elena V." loading="lazy">
+              <div>
+                <h4 style="margin-bottom: 0;">Elena V.</h4>
+                <div class="role">Plant Engineer</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="quote-card" data-reveal>
+            <svg class="quote-mark" width="44" height="44" viewBox="0 0 24 24" fill="currentColor"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg>
+            <div class="stars">
+              <svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+              <svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+              <svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+              <svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+              <svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+            </div>
+            <p class="quote-body">"Since partnering with AirForge for our facility's ventilation needs, we have seen a noticeable improvement in air quality and employee satisfaction."</p>
+            <div class="quote-author">
+              <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&q=80&w=150&h=150" alt="Robert K." loading="lazy">
+              <div>
+                <h4 style="margin-bottom: 0;">Robert K.</h4>
+                <div class="role">Operations Director</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Full Width CTA -->
+    <section class="cta-band">
+      <div class="container" style="text-align: center;">
+        <span class="eyebrow is-center">Next Step</span>
+        <h2>Ready to upgrade your facility?</h2>
+        <p class="text-lead">Contact our engineering team to schedule a site audit or discuss your air quality requirements.</p>
+        <div class="hero-actions" style="margin-top: var(--space-3);">
+          <a href="contact.html" class="btn btn-primary btn-lg">
+            Start the Consultation Process
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </a>
+          <a href="case-studies.html" class="btn btn-outline btn-lg" style="color: #fff; border-color: rgba(255,255,255,0.28);">See Deployments</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="navbar-brand">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#ea580c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20"></path><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+            AirForge
+          </a>
+          <p style="margin-top: var(--space-3); color: #94a3b8; max-width: 340px;">Engineered air quality solutions for modern industrial facilities. Reliable, compliant, and built for continuous operation.</p>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="home2.html">Home 2</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="case-studies.html">Case Studies</a></li>
+            <li><a href="contact.html">Contact Engineering</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Our Services</h4>
+          <ul class="footer-links">
+            <li><a href="services.html">System Design</a></li>
+            <li><a href="services.html">Installation</a></li>
+            <li><a href="services.html">Filter Maintenance</a></li>
+            <li><a href="services.html">Facility Audits</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Contact</h4>
+          <ul class="footer-links">
+            <li><span class="text-spec" style="background: rgba(234,88,12,0.14); border-color: rgba(234,88,12,0.3);">1-800-AIRFORGE</span></li>
+            <li><a href="mailto:engineering@airforge.com">engineering@airforge.com</a></li>
+            <li style="margin-top: 1rem;">
+              <span style="display: inline-flex; gap: 0.5rem; align-items: center; border: 1px solid #334155; padding: 6px 12px; border-radius: var(--radius-pill); font-size: 0.75rem;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                OSHA Compliant Design
+              </span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        &copy; 2026 AirForge Industrial Systems. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Request a Consultation | AirForge Industrial Systems</title>
+  <meta name="description" content="Request an engineering consultation or facility audit for your industrial ventilation and air quality needs.">
+  
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/rtl.css">
+  
+  <script>
+    const storedTheme = localStorage.getItem('theme');
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    if (storedTheme === 'dark' || (!storedTheme && prefersDark)) {
+      document.documentElement.setAttribute('data-theme', 'dark');
+    }
+  </script>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="container">
+      <a href="index.html" class="navbar-brand">
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20"></path><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+        AirForge
+      </a>
+      
+      <nav class="navbar-nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="home2.html" class="nav-link">Home 2</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="case-studies.html" class="nav-link">Case Studies</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="navbar-actions">
+        <button class="btn-icon theme-toggle" aria-label="Toggle Theme"></button>
+        <button class="btn-icon rtl-toggle" aria-label="Toggle RTL">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 3l4 4-4 4"></path><path d="M3 17l4 4-4-4"></path><path d="M21 7H7a4 4 0 0 0-4 4v0"></path><path d="M3 17h14a4 4 0 0 0 4-4v0"></path></svg>
+        </button>
+        <a href="request-consultation.html" class="btn btn-primary d-none-mobile">Request a Consultation</a>
+        
+        <button class="hamburger" aria-label="Open Menu">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="drawer-overlay"></div>
+  <div class="drawer">
+    <div class="drawer-header">
+      <div class="navbar-brand">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20"></path><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+        AirForge
+      </div>
+      <button class="btn-icon drawer-close" aria-label="Close Menu">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      </button>
+    </div>
+    <nav class="drawer-nav">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="home2.html" class="nav-link">Home 2</a>
+      <a href="services.html" class="nav-link">Services</a>
+      <a href="case-studies.html" class="nav-link">Case Studies</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+    </nav>
+    <div class="drawer-actions">
+      <div class="drawer-controls">
+        <button class="btn-icon theme-toggle" aria-label="Toggle Theme"></button>
+        <button class="btn-icon rtl-toggle" aria-label="Toggle RTL">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 3l4 4-4 4"></path><path d="M3 17l4 4-4-4"></path><path d="M21 7H7a4 4 0 0 0-4 4v0"></path><path d="M3 17h14a4 4 0 0 0 4-4v0"></path></svg>
+        </button>
+      </div>
+      <a href="request-consultation.html" class="btn btn-primary" style="width: 100%;">Request a Consultation</a>
+    </div>
+  </div>
+
+  <main>
+    <!-- Page Header -->
+    <section class="page-hero">
+      <div class="container" style="text-align: center;">
+        <span class="eyebrow is-center animate-fade-up">Start A Project</span>
+        <h1 class="animate-fade-up">Request a Consultation</h1>
+        <p class="text-lead animate-fade-up delay-100" style="max-width: 700px; margin: 0 auto;">Connect with our technical team to discuss compliance audits, system design, or facility upgrades.</p>
+      </div>
+    </section>
+
+    <!-- Form Section -->
+    <section>
+      <div class="container" style="max-width: 800px; margin: 0 auto;">
+        
+        <div class="form-panel">
+          <h3 style="margin-bottom: var(--space-3);">Submit Project Inquiry</h3>
+          
+          <div id="formSuccessMsg" class="form-success-msg">
+            Your consultation request has been securely submitted. An AirForge engineer will contact you within 24 hours.
+          </div>
+
+          <form id="consultationForm" action="https://formspree.io/f/placeholder" method="POST" novalidate>
+            
+            <div class="grid grid-2" style="gap: var(--space-3); margin-bottom: var(--space-3);">
+              <div class="form-group" style="margin-bottom: 0;">
+                <label for="fullName" class="form-label">Full Name *</label>
+                <input type="text" id="fullName" name="fullName" class="form-control" required>
+                <div class="invalid-feedback">Please provide your name.</div>
+              </div>
+              
+              <div class="form-group" style="margin-bottom: 0;">
+                <label for="companyName" class="form-label">Company Name *</label>
+                <input type="text" id="companyName" name="companyName" class="form-control" required>
+                <div class="invalid-feedback">Please provide your company name.</div>
+              </div>
+            </div>
+
+            <div class="grid grid-2" style="gap: var(--space-3); margin-bottom: var(--space-3);">
+              <div class="form-group" style="margin-bottom: 0;">
+                <label for="email" class="form-label">Email Address *</label>
+                <input type="email" id="email" name="email" class="form-control" required>
+                <div class="invalid-feedback">Please provide a valid email address.</div>
+              </div>
+              
+              <div class="form-group" style="margin-bottom: 0;">
+                <label for="phone" class="form-label">Phone Number</label>
+                <input type="tel" id="phone" name="phone" class="form-control">
+              </div>
+            </div>
+
+            <div class="grid grid-2" style="gap: var(--space-3); margin-bottom: var(--space-3);">
+              <div class="form-group" style="margin-bottom: 0;">
+                <label for="industry" class="form-label">Industry / Facility Type</label>
+                <input type="text" id="industry" name="industry" class="form-control" placeholder="e.g. Woodworking, Welding">
+              </div>
+              
+              <div class="form-group" style="margin-bottom: 0;">
+                <label for="location" class="form-label">Facility Location</label>
+                <input type="text" id="location" name="location" class="form-control" placeholder="City, State / Region">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">System(s) of Interest *</label>
+              <div id="systemsGroup" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 0.5rem;">
+                <label class="checkbox-group">
+                  <input type="checkbox" name="system" value="Dust Collection">
+                  Dust Collection
+                </label>
+                <label class="checkbox-group">
+                  <input type="checkbox" name="system" value="Fume Extraction">
+                  Fume Extraction
+                </label>
+                <label class="checkbox-group">
+                  <input type="checkbox" name="system" value="Ventilation Design">
+                  Ventilation Design
+                </label>
+                <label class="checkbox-group">
+                  <input type="checkbox" name="system" value="Filter Maintenance">
+                  Filter Maintenance
+                </label>
+                <label class="checkbox-group">
+                  <input type="checkbox" name="system" value="Not Sure">
+                  Not Sure (Audit)
+                </label>
+              </div>
+              <div id="systemsError" class="invalid-feedback">Please select at least one area of interest.</div>
+            </div>
+
+            <div class="form-group">
+              <label for="timeline" class="form-label">Project Timeline</label>
+              <select id="timeline" name="timeline" class="form-control">
+                <option value="immediate">Immediate (Emergency / Shut down)</option>
+                <option value="1-3_months" selected>1-3 Months (Active planning)</option>
+                <option value="planning">Budgeting / Future Planning</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="message" class="form-label">Project Details</label>
+              <textarea id="message" name="message" class="form-control" placeholder="Briefly describe the hazard, particulate type, or current system challenges..."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%;">Submit Consultation Request</button>
+            <p style="font-size: 0.75rem; color: var(--color-text-main); margin-top: 1rem; text-align: center;">By submitting this form, you agree to our standard engineering consultation terms.</p>
+          </form>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="navbar-brand">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#ea580c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20"></path><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+            AirForge
+          </a>
+          <p style="margin-top: var(--space-3); color: #94a3b8;">Engineered air quality solutions for modern industrial facilities. Reliable, compliant, and built for continuous operation.</p>
+        </div>
+        
+        <div>
+          <h4 class="footer-heading">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="home2.html">Home 2</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="case-studies.html">Case Studies</a></li>
+            <li><a href="contact.html">Contact Engineering</a></li>
+          </ul>
+        </div>
+        
+        <div>
+          <h4 class="footer-heading">Our Services</h4>
+          <ul class="footer-links">
+            <li><a href="services.html#design">System Design</a></li>
+            <li><a href="services.html#installation">Installation</a></li>
+            <li><a href="services.html#maintenance">Filter Maintenance</a></li>
+            <li><a href="contact.html">Facility Audits</a></li>
+          </ul>
+        </div>
+        
+        <div>
+          <h4 class="footer-heading">Contact</h4>
+          <ul class="footer-links">
+            <li><span class="text-spec" style="background: rgba(234,88,12,0.14); border-color: rgba(234,88,12,0.3);">1-800-AIRFORGE</span></li>
+            <li><a href="mailto:engineering@airforge.com">engineering@airforge.com</a></li>
+            <li style="margin-top: 1rem;">
+              <span style="display: inline-flex; gap: 0.5rem; align-items: center; border: 1px solid #334155; padding: 6px 12px; border-radius: var(--radius-pill); font-size: 0.75rem;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                OSHA Compliant Design
+              </span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        &copy; 2026 AirForge Industrial Systems. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

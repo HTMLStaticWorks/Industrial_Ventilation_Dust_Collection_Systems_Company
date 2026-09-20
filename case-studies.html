@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Case Studies | AirForge Industrial Systems</title>
+  <meta name="description" content="Explore our completed industrial air quality projects across heavy manufacturing, woodworking, and metalworking facilities.">
+  
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/rtl.css">
+  
+  <script>
+    const storedTheme = localStorage.getItem('theme');
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    if (storedTheme === 'dark' || (!storedTheme && prefersDark)) {
+      document.documentElement.setAttribute('data-theme', 'dark');
+    }
+  </script>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="container">
+      <a href="index.html" class="navbar-brand">
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20"></path><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+        AirForge
+      </a>
+      
+      <nav class="navbar-nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="home2.html" class="nav-link">Home 2</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="case-studies.html" class="nav-link active">Case Studies</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="navbar-actions">
+        <button class="btn-icon theme-toggle" aria-label="Toggle Theme"></button>
+        <button class="btn-icon rtl-toggle" aria-label="Toggle RTL">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 3l4 4-4 4"></path><path d="M3 17l4 4-4-4"></path><path d="M21 7H7a4 4 0 0 0-4 4v0"></path><path d="M3 17h14a4 4 0 0 0 4-4v0"></path></svg>
+        </button>
+        <a href="request-consultation.html" class="btn btn-primary d-none-mobile">Request a Consultation</a>
+        
+        <button class="hamburger" aria-label="Open Menu">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="drawer-overlay"></div>
+  <div class="drawer">
+    <div class="drawer-header">
+      <div class="navbar-brand">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20"></path><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+        AirForge
+      </div>
+      <button class="btn-icon drawer-close" aria-label="Close Menu">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      </button>
+    </div>
+    <nav class="drawer-nav">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="home2.html" class="nav-link">Home 2</a>
+      <a href="services.html" class="nav-link">Services</a>
+      <a href="case-studies.html" class="nav-link active">Case Studies</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+    </nav>
+    <div class="drawer-actions">
+      <div class="drawer-controls">
+        <button class="btn-icon theme-toggle" aria-label="Toggle Theme"></button>
+        <button class="btn-icon rtl-toggle" aria-label="Toggle RTL">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 3l4 4-4 4"></path><path d="M3 17l4 4-4-4"></path><path d="M21 7H7a4 4 0 0 0-4 4v0"></path><path d="M3 17h14a4 4 0 0 0 4-4v0"></path></svg>
+        </button>
+      </div>
+      <a href="request-consultation.html" class="btn btn-primary" style="width: 100%;">Request a Consultation</a>
+    </div>
+  </div>
+
+  <main>
+    <!-- Page Header -->
+    <section class="page-hero">
+      <div class="container" style="text-align: center;">
+        <span class="eyebrow is-center animate-fade-up">Deployments</span>
+        <h1 class="animate-fade-up">Proven Results</h1>
+        <p class="text-lead animate-fade-up delay-100" style="max-width: 700px; margin: 0 auto;">Review our track record of engineering compliance-driven air quality solutions across multiple industrial sectors.</p>
+      </div>
+    </section>
+
+    <!-- Case Studies Grid -->
+    <section>
+      <div class="container">
+        <!-- Optional: Filters could go here if implemented in JS -->
+        <div style="display: flex; gap: var(--space-2); justify-content: center; margin-bottom: var(--space-6); flex-wrap: wrap;">
+          <button class="btn btn-primary" style="padding: 0.5rem 1rem;">All Industries</button>
+          <button class="btn btn-outline" style="padding: 0.5rem 1rem;">Metalworking</button>
+          <button class="btn btn-outline" style="padding: 0.5rem 1rem;">Woodworking</button>
+          <button class="btn btn-outline" style="padding: 0.5rem 1rem;">Chemical Processing</button>
+        </div>
+
+        <div class="grid grid-2">
+          <!-- Case 1 -->
+          <div class="card" style="text-align: left; align-items: flex-start;">
+            <img src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&q=80&w=800" alt="Factory interior with heavy machinery" class="card-img">
+            <div class="card-tags">
+              <span class="tag">Heavy Metal Fabrication</span>
+            </div>
+            <h3>Ambient Weld Fume Control</h3>
+            <p style="margin-bottom: 1.5rem;">Deployed a central push-pull ventilation system across a 40,000 sq ft fabrication floor, replacing inefficient localized fans.</p>
+            <div style="background: var(--color-surface); padding: 1rem; border-radius: var(--radius); width: 100%; border: 1px solid var(--color-border); margin-bottom: 1.5rem;">
+              <div style="font-family: var(--font-mono); font-size: 0.875rem; color: var(--color-accent); margin-bottom: 0.5rem;">KEY RESULT</div>
+              <div style="font-weight: 500;">92% reduction in ambient particulate matter, zero OSHA citations in follow-up audit.</div>
+            </div>
+            <!-- PDF_DOWNLOAD_LINK: <a href="#" class="btn btn-outline">Download Specs (PDF)</a> -->
+            <a href="case-study-single.html" class="btn btn-primary" style="margin-top: 1rem;">View Full Case Study</a>
+          </div>
+          
+          <!-- Case 2 -->
+          <div class="card" style="text-align: left; align-items: flex-start;">
+            <img src="https://images.unsplash.com/photo-1565514020179-026b92b84bb6?auto=format&fit=crop&q=80&w=800" alt="Ductwork in industrial facility" class="card-img">
+            <div class="card-tags">
+              <span class="tag">Industrial Woodworking</span>
+            </div>
+            <h3>Combustible Dust Mitigation</h3>
+            <p style="margin-bottom: 1.5rem;">Engineered a closed-loop collection system with spark detection and abort gates for a high-volume milling facility.</p>
+            <div style="background: var(--color-surface); padding: 1rem; border-radius: var(--radius); width: 100%; border: 1px solid var(--color-border); margin-bottom: 1.5rem;">
+              <div style="font-family: var(--font-mono); font-size: 0.875rem; color: var(--color-accent); margin-bottom: 0.5rem;">KEY RESULT</div>
+              <div style="font-weight: 500;">Achieved full NFPA 664 compliance while increasing overall system energy efficiency by 18%.</div>
+            </div>
+            <a href="case-study-single.html" class="btn btn-primary" style="margin-top: 1rem;">View Full Case Study</a>
+          </div>
+
+          <!-- Case 3 -->
+          <div class="card" style="text-align: left; align-items: flex-start;">
+            <img src="https://images.unsplash.com/photo-1581092795360-fd1ca04f0952?auto=format&fit=crop&q=80&w=800" alt="Chemical processing plant" class="card-img">
+            <div class="card-tags">
+              <span class="tag">Chemical Processing</span>
+            </div>
+            <h3>Corrosive Vapor Extraction</h3>
+            <p style="margin-bottom: 1.5rem;">Installed a custom fiberglass reinforced plastic (FRP) duct network and wet scrubber system for acid vapor containment.</p>
+            <div style="background: var(--color-surface); padding: 1rem; border-radius: var(--radius); width: 100%; border: 1px solid var(--color-border); margin-bottom: 1.5rem;">
+              <div style="font-family: var(--font-mono); font-size: 0.875rem; color: var(--color-accent); margin-bottom: 0.5rem;">KEY RESULT</div>
+              <div style="font-weight: 500;">Exceeded EPA emission standards by 40% and eliminated structural corrosion issues on the factory roof.</div>
+            </div>
+            <a href="case-study-single.html" class="btn btn-primary" style="margin-top: 1rem;">View Full Case Study</a>
+          </div>
+
+          <!-- Case 4 -->
+          <div class="card" style="text-align: left; align-items: flex-start;">
+            <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=800" alt="Aerospace manufacturing facility" class="card-img">
+            <div class="card-tags">
+              <span class="tag">Aerospace Manufacturing</span>
+            </div>
+            <h3>Composite Sanding Filtration</h3>
+            <p style="margin-bottom: 1.5rem;">Designed localized downdraft tables integrated into a central cartridge collector for hazardous composite dust.</p>
+            <div style="background: var(--color-surface); padding: 1rem; border-radius: var(--radius); width: 100%; border: 1px solid var(--color-border); margin-bottom: 1.5rem;">
+              <div style="font-family: var(--font-mono); font-size: 0.875rem; color: var(--color-accent); margin-bottom: 0.5rem;">KEY RESULT</div>
+              <div style="font-weight: 500;">Maintained ISO Class 8 cleanroom conditions in adjacent assembly areas.</div>
+            </div>
+            <a href="case-study-single.html" class="btn btn-primary" style="margin-top: 1rem;">View Full Case Study</a>
+          </div>
+
+          <!-- Case 5 -->
+          <div class="card" style="text-align: left; align-items: flex-start;">
+            <img src="https://images.unsplash.com/photo-1616423641403-f933f4460fcc?auto=format&fit=crop&q=80&w=800" alt="Paint and coating facility" class="card-img">
+            <div class="card-tags">
+              <span class="tag">Paint & Coating Facility</span>
+            </div>
+            <h3>Large-Scale VOC Extraction</h3>
+            <p style="margin-bottom: 1.5rem;">Deployed an automated continuous thermal oxidizer (RTO) linked with large-scale VOC extraction hoods.</p>
+            <div style="background: var(--color-surface); padding: 1rem; border-radius: var(--radius); width: 100%; border: 1px solid var(--color-border); margin-bottom: 1.5rem;">
+              <div style="font-family: var(--font-mono); font-size: 0.875rem; color: var(--color-accent); margin-bottom: 0.5rem;">KEY RESULT</div>
+              <div style="font-weight: 500;">99.5% VOC destruction efficiency and reduced fuel consumption via thermal recovery.</div>
+            </div>
+            <a href="case-study-single.html" class="btn btn-primary" style="margin-top: 1rem;">View Full Case Study</a>
+          </div>
+
+          <!-- Case 6 -->
+          <div class="card" style="text-align: left; align-items: flex-start;">
+            <img src="https://images.unsplash.com/photo-1505305976870-c0be1cd87413?auto=format&fit=crop&q=80&w=800" alt="Foundry and casting facility" class="card-img">
+            <div class="card-tags">
+              <span class="tag">Foundry & Casting</span>
+            </div>
+            <h3>High-Temperature Exhaust Recovery</h3>
+            <p style="margin-bottom: 1.5rem;">Engineered a refractory-lined high-temperature capture canopy with heavy-duty centrifugal exhaust fans.</p>
+            <div style="background: var(--color-surface); padding: 1rem; border-radius: var(--radius); width: 100%; border: 1px solid var(--color-border); margin-bottom: 1.5rem;">
+              <div style="font-family: var(--font-mono); font-size: 0.875rem; color: var(--color-accent); margin-bottom: 0.5rem;">KEY RESULT</div>
+              <div style="font-weight: 500;">Successfully captured 98% of fugitive emissions operating at temperatures up to 800°F.</div>
+            </div>
+            <a href="case-study-single.html" class="btn btn-primary" style="margin-top: 1rem;">View Full Case Study</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Full Width CTA -->
+    <section class="cta-band">
+      <div class="container" style="text-align: center;">
+        <h2>Ready to Upgrade Your Facility?</h2>
+        <p class="text-lead">Contact our engineering team to schedule a site audit or discuss your air quality requirements.</p>
+        <a href="request-consultation.html" class="btn btn-primary" style="margin-top: var(--space-2); padding: 1rem 2rem; font-size: 1.125rem;">Start the Consultation Process</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="navbar-brand">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#ea580c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20"></path><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+            AirForge
+          </a>
+          <p style="margin-top: var(--space-3); color: #94a3b8;">Engineered air quality solutions for modern industrial facilities. Reliable, compliant, and built for continuous operation.</p>
+        </div>
+        
+        <div>
+          <h4 class="footer-heading">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="home2.html">Home 2</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="case-studies.html">Case Studies</a></li>
+            <li><a href="contact.html">Contact Engineering</a></li>
+          </ul>
+        </div>
+        
+        <div>
+          <h4 class="footer-heading">Our Services</h4>
+          <ul class="footer-links">
+            <li><a href="services.html#design">System Design</a></li>
+            <li><a href="services.html#installation">Installation</a></li>
+            <li><a href="services.html#maintenance">Filter Maintenance</a></li>
+            <li><a href="contact.html">Facility Audits</a></li>
+          </ul>
+        </div>
+        
+        <div>
+          <h4 class="footer-heading">Contact</h4>
+          <ul class="footer-links">
+            <li><span class="text-spec" style="background: rgba(234,88,12,0.14); border-color: rgba(234,88,12,0.3);">1-800-AIRFORGE</span></li>
+            <li><a href="mailto:engineering@airforge.com">engineering@airforge.com</a></li>
+            <li style="margin-top: 1rem;">
+              <span style="display: inline-flex; gap: 0.5rem; align-items: center; border: 1px solid #334155; padding: 6px 12px; border-radius: var(--radius-pill); font-size: 0.75rem;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                OSHA Compliant Design
+              </span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        &copy; 2026 AirForge Industrial Systems. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
