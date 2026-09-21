@@ -11,6 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initAnatomyExplorer();
   initProcessTabs();
   setActiveNavLink();
+  initBackToTop();
 });
 
 const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -808,6 +809,29 @@ function initProcessTabs() {
         // Force reflow for fade in effect if needed later
         targetPanel.classList.add('active');
       }
+    });
+  });
+}
+
+/* --------------------------------------------------------------------------
+   Back to Top
+   -------------------------------------------------------------------------- */
+function initBackToTop() {
+  const btn = document.getElementById('backToTop');
+  if (!btn) return;
+
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 300) {
+      btn.classList.add('is-visible');
+    } else {
+      btn.classList.remove('is-visible');
+    }
+  }, { passive: true });
+
+  btn.addEventListener('click', () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
     });
   });
 }

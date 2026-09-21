@@ -10,6 +10,8 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <link rel="apple-touch-icon" href="assets/images/favicon.svg">
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/rtl.css">
 
@@ -28,12 +30,7 @@
   <header class="navbar">
     <div class="container">
       <a href="index.html" class="navbar-brand">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-          stroke-linecap="round" stroke-linejoin="round">
-          <path d="M12 2v20"></path>
-          <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
-        </svg>
-        AirForge
+        <img src="assets/images/logo.svg" alt="AirForge" class="brand-logo" width="140" height="40">
       </a>
 
       <nav class="navbar-nav">
@@ -74,12 +71,7 @@
   <div class="drawer">
     <div class="drawer-header">
       <div class="navbar-brand">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-          stroke-linecap="round" stroke-linejoin="round">
-          <path d="M12 2v20"></path>
-          <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
-        </svg>
-        AirForge
+        <img src="assets/images/logo.svg" alt="AirForge" class="brand-logo" width="140" height="40">
       </div>
       <button class="btn-icon drawer-close" aria-label="Close Menu">
         <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none"
@@ -153,7 +145,8 @@
             <div class="spec-label">OSHA Violations</div>
           </div>
           <div>
-            <div class="spec-value"><span data-count="99.99" data-count-decimals="2" data-count-suffix="%">0</span></div>
+            <div class="spec-value"><span data-count="99.99" data-count-decimals="2" data-count-suffix="%">0</span>
+            </div>
             <div class="spec-label">Capture Efficiency</div>
           </div>
           <div>
@@ -440,8 +433,8 @@
             </div>
           </div>
           <div class="hero-visual">
-            <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&q=80&w=1000"
-              alt="Industrial filtration system" loading="lazy">
+            <img src="assets/images/industrial-filtration-system-closeup.jpg" alt="Industrial filtration system"
+              loading="lazy">
           </div>
         </div>
       </div>
@@ -452,7 +445,7 @@
       <div class="container">
         <div class="grid grid-2" style="align-items: center; gap: var(--space-6);">
           <div class="hero-visual">
-            <img src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&q=80&w=1000"
+            <img src="assets/images/engineers-reviewing-floor-plans.jpg"
               alt="Engineers reviewing plans on factory floor" loading="lazy">
           </div>
           <div class="order-first-mobile" style="text-align: center;">
@@ -561,9 +554,7 @@
             <p class="quote-body">"AirForge completely transformed our manufacturing floor. The new extraction system
               runs 24/7 with zero issues, and our OSHA compliance audit was flawless."</p>
             <div class="quote-author">
-              <img
-                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=150&h=150"
-                alt="Marcus T." loading="lazy">
+              <img src="assets/images/avatar-marcus-safety-coordinator.jpg" alt="Marcus T." loading="lazy">
               <div>
                 <h4 style="margin-bottom: 0;">Marcus T.</h4>
                 <div class="role">Safety Coordinator</div>
@@ -580,9 +571,7 @@
             <p class="quote-body">"Their engineering team didn't just sell us a product; they mapped our entire airflow
               dynamic and custom-built a solution that actually lowered our energy costs."</p>
             <div class="quote-author">
-              <img
-                src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&q=80&w=150&h=150"
-                alt="Sarah J." loading="lazy">
+              <img src="assets/images/avatar-sarah-vp-manufacturing.jpg" alt="Sarah J." loading="lazy">
               <div>
                 <h4 style="margin-bottom: 0;">Sarah J.</h4>
                 <div class="role">VP of Manufacturing</div>
@@ -599,9 +588,7 @@
             <p class="quote-body">"We needed an emergency upgrade after a facility expansion. AirForge mobilized
               immediately. The build quality on their heavy-duty ducting is phenomenal."</p>
             <div class="quote-author">
-              <img
-                src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80&w=150&h=150"
-                alt="David R." loading="lazy">
+              <img src="assets/images/avatar-david-production-supervisor.jpg" alt="David R." loading="lazy">
               <div>
                 <h4 style="margin-bottom: 0;">David R.</h4>
                 <div class="role">Production Supervisor</div>
@@ -641,19 +628,25 @@
       <div class="footer-grid">
         <div class="footer-brand">
           <a href="index.html" class="navbar-brand">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#ea580c" stroke-width="2"
-              stroke-linecap="round" stroke-linejoin="round">
-              <path d="M12 2v20"></path>
-              <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
-            </svg>
-            AirForge
-          </a>
+        <img src="assets/images/logo.svg" alt="AirForge" class="brand-logo" width="140" height="40">
+      </a>
           <p style="margin-top: var(--space-3); color: #94a3b8; max-width: 340px;">Engineered air quality solutions for
             modern industrial facilities. Reliable, compliant, and built for continuous operation.</p>
           <div class="social-links" style="margin-top: var(--space-4); display: flex; gap: 1rem;">
-            <a href="#" aria-label="LinkedIn" style="color: #94a3b8;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg></a>
-            <a href="#" aria-label="Twitter" style="color: #94a3b8;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg></a>
-            <a href="#" aria-label="YouTube" style="color: #94a3b8;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33 2.78 2.78 0 0 0 1.94 2c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.33 29 29 0 0 0-.46-5.33z"></path><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon></svg></a>
+            <a href="#" aria-label="LinkedIn" class="social-icon"><svg width="20" height="20" viewBox="0 0 24 24"
+                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                <rect x="2" y="9" width="4" height="12"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg></a>
+            <a href="#" aria-label="X (formerly Twitter)" class="social-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path></svg></a>
+            <a href="#" aria-label="YouTube" class="social-icon"><svg width="20" height="20" viewBox="0 0 24 24"
+                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path
+                  d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33 2.78 2.78 0 0 0 1.94 2c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.33 29 29 0 0 0-.46-5.33z">
+                </path>
+                <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon>
+              </svg></a>
           </div>
         </div>
 
@@ -703,6 +696,12 @@
       </div>
     </div>
   </footer>
+
+  <button id="backToTop" class="back-to-top" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M12 19V5M5 12l7-7 7 7"/>
+    </svg>
+  </button>
 
   <script src="assets/js/main.js"></script>
 </body>
