@@ -9,6 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initFormValidation();
   initConfigurator();
   initAnatomyExplorer();
+  initProcessTabs();
   setActiveNavLink();
 });
 
@@ -778,4 +779,35 @@ function initAnatomyExplorer() {
 
     starter.observe(root);
   }
+}
+
+/* --------------------------------------------------------------------------
+   Process Tabs
+   -------------------------------------------------------------------------- */
+function initProcessTabs() {
+  const steps = document.querySelectorAll('.process-step[data-target]');
+  const panels = document.querySelectorAll('.process-panel');
+
+  if (steps.length === 0) return;
+
+  steps.forEach(step => {
+    step.addEventListener('click', () => {
+      // Remove active from all steps and hide all panels
+      steps.forEach(s => s.classList.remove('active'));
+      panels.forEach(p => {
+        p.style.display = 'none';
+        p.classList.remove('active');
+      });
+
+      // Add active to clicked step and show its target panel
+      step.classList.add('active');
+      const targetId = step.getAttribute('data-target');
+      const targetPanel = document.getElementById(targetId);
+      if (targetPanel) {
+        targetPanel.style.display = 'block';
+        // Force reflow for fade in effect if needed later
+        targetPanel.classList.add('active');
+      }
+    });
+  });
 }
