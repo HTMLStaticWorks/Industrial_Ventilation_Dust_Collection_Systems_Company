@@ -609,6 +609,14 @@ body.nav-over-hero .navbar:not(.is-scrolled) .hamburger {
   border-color: rgba(255, 255, 255, 0.3);
 }
 
+/* Over the hero the icon is white, so the default light-theme surface fill
+   would hide it on hover — use a translucent white instead. */
+body.nav-over-hero .navbar:not(.is-scrolled) .hamburger:hover {
+  background: rgba(255, 255, 255, 0.16);
+  border-color: rgba(255, 255, 255, 0.5);
+  color: #fff;
+}
+
 /* Scroll progress bar */
 .scroll-progress {
   position: fixed;
@@ -1624,12 +1632,14 @@ footer .container {
   margin-bottom: var(--space-8);
 }
 
-.service-block:nth-child(even) {
-  direction: rtl;
+/* Markup order is content then image, so the default puts the image on the
+   trailing side. .is-reverse flips it for every other block. */
+.service-block.is-reverse>*:first-child {
+  order: 2;
 }
 
-.service-block:nth-child(even)>* {
-  direction: ltr;
+.service-block.is-reverse>*:last-child {
+  order: 1;
 }
 
 .service-block-img {
@@ -1864,8 +1874,10 @@ footer .container {
     grid-template-columns: 1fr;
   }
 
-  .service-block:nth-child(even) {
-    direction: ltr;
+  /* Single column: content always leads, image follows */
+  .service-block.is-reverse>*:first-child,
+  .service-block.is-reverse>*:last-child {
+    order: 0;
   }
 
   .form-panel {
@@ -2306,6 +2318,10 @@ footer .container {
   text-transform: uppercase;
   color: #8493a8;
   display: block;
+  line-height: 1.3;
+  /* Reserve two lines so one- and two-line labels push their value to the
+     same baseline across the grid */
+  min-height: 2.6em;
   margin-bottom: 0.35rem;
 }
 
@@ -2316,14 +2332,25 @@ footer .container {
   color: #fff;
   letter-spacing: -0.02em;
   line-height: 1.1;
+  display: block;
+  white-space: nowrap;
+  /* Reserve the figure line plus the unit line so a tile without a unit
+     (Code Basis) still ends level with the rest */
+  min-height: 2.75rem;
 }
 
+/* The unit sits on its own line under the figure, so a long one like "sq ft"
+   or "k/yr" is never clipped by the tile edge. */
 .cfg-metric .v small {
   font-family: var(--font-mono);
   font-size: 0.7rem;
   font-weight: 400;
   color: #8493a8;
-  margin-left: 0.25rem;
+  display: block;
+  margin-inline-start: 0;
+  margin-top: 0.15rem;
+  line-height: 1.3;
+  white-space: nowrap;
 }
 
 /* Compliance note */
@@ -2889,12 +2916,12 @@ footer .container {
 
 /* Each tile reserves its tallest state so a wrapping label cannot nudge the row. */
 .cfg-metric {
-  min-height: 84px;
+  min-height: 108px;
 }
 
 .cfg-metric .v {
   display: block;
-  min-height: 1.65rem;
+  min-height: 2.75rem;
 }
 
 /* The compliance note is the one block whose text length changes per profile —
@@ -3445,4 +3472,57 @@ details.faq-item p {
 [data-theme="dark"] .hero-alt .btn-outline {
   background-color: rgba(14, 19, 28, 0.6);
   border-color: #5c6c85;
+}
+
+/* --------------------------------------------------------------------------
+   Case study cards — every row ends on a shared baseline
+   -------------------------------------------------------------------------- */
+/* The blurb absorbs the slack so the key-result panel and the button sit at
+   the same height in every card, whatever the copy length. */
+.grid-cases .card h3 {
+  min-height: 2.5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.grid-cases .case-blurb {
+  margin-bottom: 1.5rem;
+  min-height: 4.8em;
+}
+
+.grid-cases .case-result {
+  background: var(--color-surface);
+  padding: 1rem;
+  border-radius: var(--radius);
+  width: 100%;
+  border: 1px solid var(--color-border);
+  margin-top: auto;
+  margin-bottom: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.grid-cases .case-result-label {
+  font-family: var(--font-mono);
+  font-size: 0.875rem;
+  color: var(--color-accent);
+  margin-bottom: 0.5rem;
+}
+
+/* Three lines is the longest result copy, so reserving it keeps every panel
+   the same height and every panel's text ending on the same line. */
+.grid-cases .case-result-value {
+  font-weight: 500;
+  min-height: 4.8em;
+}
+
+@media (max-width: 560px) {
+
+  /* One card per row: nothing to align against, so let the copy set the height */
+  .grid-cases .card h3,
+  .grid-cases .case-blurb,
+  .grid-cases .case-result-value {
+    min-height: 0;
+  }
 }
