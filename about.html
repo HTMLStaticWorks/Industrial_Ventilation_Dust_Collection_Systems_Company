@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us | AirForge Industrial Systems</title>
+  <meta name="description" content="AirForge Industrial Systems engineers, installs, and maintains industrial ventilation and dust collection systems for compliant, continuously operating facilities.">
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <link rel="apple-touch-icon" href="assets/images/favicon.svg">
+  
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/rtl.css">
+  
+  <script>
+    const storedTheme = localStorage.getItem('theme');
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    if (storedTheme === 'dark' || (!storedTheme && prefersDark)) {
+      document.documentElement.setAttribute('data-theme', 'dark');
+    }
+  </script>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="container">
+      <a href="index.html" class="navbar-brand">
+        <img src="assets/images/logo.svg" alt="AirForge" class="brand-logo" width="140" height="40">
+      </a>
+      
+      <nav class="navbar-nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="home2.html" class="nav-link">Home 2</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="about.html" class="nav-link active">About</a>
+        <a href="case-studies.html" class="nav-link">Case Studies</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="navbar-actions">
+        <button class="btn-icon theme-toggle" aria-label="Toggle Theme"></button>
+        <button class="btn-icon rtl-toggle" aria-label="Toggle RTL">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3L4 7l4 4"></path><path d="M4 7h16"></path><path d="M16 21l4-4-4-4"></path><path d="M20 17H4"></path></svg>
+        </button>
+        <a href="request-consultation.html" class="btn btn-primary d-none-mobile">Request a Consultation</a>
+        
+        <button class="hamburger" aria-label="Open Menu">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="drawer-overlay"></div>
+  <div class="drawer">
+    <div class="drawer-header">
+      <div class="navbar-brand">
+        <img src="assets/images/logo.svg" alt="AirForge" class="brand-logo" width="140" height="40">
+      </div>
+      <button class="btn-icon drawer-close" aria-label="Close Menu">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      </button>
+    </div>
+    <nav class="drawer-nav">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="home2.html" class="nav-link">Home 2</a>
+      <a href="services.html" class="nav-link">Services</a>
+      <a href="about.html" class="nav-link active">About</a>
+      <a href="case-studies.html" class="nav-link">Case Studies</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+    </nav>
+    <div class="drawer-actions">
+      <div class="drawer-controls">
+        <button class="btn-icon theme-toggle" aria-label="Toggle Theme"></button>
+        <button class="btn-icon rtl-toggle" aria-label="Toggle RTL">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3L4 7l4 4"></path><path d="M4 7h16"></path><path d="M16 21l4-4-4-4"></path><path d="M20 17H4"></path></svg>
+        </button>
+      </div>
+      <a href="request-consultation.html" class="btn btn-primary" style="width: 100%;">Request a Consultation</a>
+    </div>
+  </div>
+
+  <main>
+    <!-- Page Header -->
+    <section class="page-hero">
+      <div class="container" style="text-align: center;">
+        <span class="eyebrow is-center animate-fade-up">About AirForge</span>
+        <h1 class="animate-fade-up">Engineering Cleaner Industrial Air</h1>
+        <p class="text-lead animate-fade-up delay-100" style="max-width: 700px; margin: 0 auto;">For over 15 years, AirForge has designed, installed, and maintained ventilation and dust collection systems that keep facilities safe, compliant, and running.</p>
+      </div>
+    </section>
+
+    <!-- Who We Are -->
+    <section>
+      <div class="container about-split">
+        <div>
+          <span class="eyebrow is-center">Who We Are</span>
+          <h2 style="margin-bottom: var(--space-3);">A Turnkey Air Quality Partner</h2>
+          <p>AirForge Industrial Systems is an engineering-led company specializing in dust collection, fume extraction, and industrial ventilation. We work with manufacturers, foundries, fabricators, and processing plants to solve airborne contaminant problems at the source.</p>
+          <p>Our in-house engineers handle every phase — facility audits, CFD airflow modeling, system design, fabrication, installation, and long-term maintenance — so you have one accountable team from first survey to final sign-off.</p>
+        </div>
+        <img src="assets/images/about-who-we-are.jpg" alt="AirForge engineering team inspecting an installed dust collection system" width="900" height="900" loading="lazy">
+      </div>
+    </section>
+
+    <!-- Stats -->
+    <section>
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow is-center">By the Numbers</span>
+          <h2>Proven Across Industrial Facilities</h2>
+          <p>Over a decade of engineering, installing, and servicing air quality systems that keep plants safe and compliant.</p>
+        </div>
+        <div class="grid grid-3">
+          <div class="stat-tile"><div class="stat-value">15+</div><div class="stat-label">Years in Operation</div></div>
+          <div class="stat-tile"><div class="stat-value">500+</div><div class="stat-label">Systems Deployed</div></div>
+          <div class="stat-tile"><div class="stat-value">24/7</div><div class="stat-label">Service Support</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Mission & Values -->
+    <section>
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow is-center">What Drives Us</span>
+          <h2>Mission &amp; Values</h2>
+          <p>Every system we build is held to the same standard: measurable air quality, verified compliance, and dependable uptime.</p>
+        </div>
+        <div class="grid grid-3 values-grid">
+          <div class="card">
+            <h3>Safety First</h3>
+            <p>We protect workers from respirable dust, weld fume, and VOC exposure, and reduce combustible dust risk with NFPA-aligned design.</p>
+          </div>
+          <div class="card">
+            <h3>Engineered, Not Off-the-Shelf</h3>
+            <p>Each solution is sized from real particulate data, airflow modeling, and your facility's structural and HVAC constraints.</p>
+          </div>
+          <div class="card">
+            <h3>Built for Uptime</h3>
+            <p>Robust equipment, planned filter maintenance, and responsive field service keep your production lines running.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Founders -->
+    <section class="bg-surface">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow is-center">Leadership</span>
+          <h2>Meet Our Founders</h2>
+          <p>Engineers who started AirForge to make industrial workplaces safer, cleaner, and more efficient.</p>
+        </div>
+        <div class="grid grid-3 founders-grid">
+          <article class="founder-card">
+            <div class="founder-photo">
+              <img src="assets/images/founder-michael-carter.jpg" alt="Michael Carter, Co-Founder and CEO" width="800" height="800" loading="lazy">
+            </div>
+            <div class="founder-body">
+              <h3>Michael Carter</h3>
+              <span class="founder-role">Co-Founder &amp; CEO</span>
+              <p>Mechanical engineer with 20+ years designing industrial exhaust and fume extraction systems for heavy manufacturing.</p>
+            </div>
+          </article>
+          <article class="founder-card">
+            <div class="founder-photo">
+              <img src="assets/images/founder-priya-nair.jpg" alt="Priya Nair, Co-Founder and Chief Engineering Officer" width="800" height="800" loading="lazy">
+            </div>
+            <div class="founder-body">
+              <h3>Priya Nair</h3>
+              <span class="founder-role">Co-Founder &amp; Chief Engineer</span>
+              <p>Leads CFD airflow modeling and combustible dust compliance, ensuring every system meets OSHA and NFPA standards.</p>
+            </div>
+          </article>
+          <article class="founder-card">
+            <div class="founder-photo">
+              <img src="assets/images/founder-daniel-reyes.jpg" alt="Daniel Reyes, Co-Founder and Head of Operations" width="800" height="800" loading="lazy">
+            </div>
+            <div class="founder-body">
+              <h3>Daniel Reyes</h3>
+              <span class="founder-role">Co-Founder &amp; Head of Operations</span>
+              <p>Oversees fabrication, installation crews, and the national service network that keeps client systems running 24/7.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- History -->
+    <section>
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow is-center">Our Journey</span>
+          <h2>Company Milestones</h2>
+          <p>From a regional fume-extraction shop to a national air quality engineering partner.</p>
+        </div>
+        <ol class="timeline">
+          <li class="timeline-item">
+            <div class="timeline-card">
+              <span class="timeline-year">2011</span>
+              <h4>Founded</h4>
+              <p>Started as a small engineering firm focused on weld fume extraction for regional fabricators.</p>
+            </div>
+          </li>
+          <li class="timeline-item">
+            <div class="timeline-card">
+              <span class="timeline-year">2015</span>
+              <h4>Dust Collection Division</h4>
+              <p>Expanded into combustible dust collection and explosion-protection systems.</p>
+            </div>
+          </li>
+          <li class="timeline-item">
+            <div class="timeline-card">
+              <span class="timeline-year">2019</span>
+              <h4>Turnkey Installation</h4>
+              <p>Launched in-house fabrication and installation crews for end-to-end project delivery.</p>
+            </div>
+          </li>
+          <li class="timeline-item">
+            <div class="timeline-card">
+              <span class="timeline-year">2024</span>
+              <h4>National Service Network</h4>
+              <p>Introduced 24/7 maintenance plans and facility audit programs nationwide.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-band cta-has-bg cta-bg-about">
+      <div class="container" style="text-align: center;">
+        <span class="eyebrow is-center">Next Step</span>
+        <h2>Ready to Improve Your Facility's Air Quality?</h2>
+        <p class="text-lead">Talk to our engineering team about an audit, a new system, or upgrading existing equipment.</p>
+        <div class="hero-actions" style="margin-top: var(--space-3);">
+          <a href="request-consultation.html" class="btn btn-primary btn-lg">Request a Consultation</a>
+          <a href="case-studies.html" class="btn btn-outline btn-lg" style="color: #fff; border-color: rgba(255,255,255,0.28);">See Deployments</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="navbar-brand">
+        <img src="assets/images/logo.svg" alt="AirForge" class="brand-logo" width="140" height="40">
+      </a>
+          <p class="footer-tagline">Engineered air quality solutions for modern industrial facilities. Reliable, compliant, and built for continuous operation.</p>
+          <div class="social-links" style="margin-top: var(--space-4); display: flex; gap: 1rem;">
+            <a href="#" aria-label="LinkedIn" class="social-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg></a>
+            <a href="#" aria-label="X (formerly Twitter)" class="social-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path></svg></a>
+            <a href="#" aria-label="YouTube" class="social-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33 2.78 2.78 0 0 0 1.94 2c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.33 29 29 0 0 0-.46-5.33z"></path><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon></svg></a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="home2.html">Home 2</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="case-studies.html">Case Studies</a></li>
+            <li><a href="contact.html">Contact Engineering</a></li>
+          </ul>
+        </div>
+        
+        <div>
+          <h4 class="footer-heading">Our Services</h4>
+          <ul class="footer-links">
+            <li><a href="services.html#design">System Design</a></li>
+            <li><a href="services.html#installation">Installation</a></li>
+            <li><a href="services.html#maintenance">Filter Maintenance</a></li>
+            <li><a href="contact.html">Facility Audits</a></li>
+          </ul>
+        </div>
+        
+        <div>
+          <h4 class="footer-heading">Contact</h4>
+          <ul class="footer-links">
+            <li><span class="text-spec" style="background: rgba(234,88,12,0.14); border-color: rgba(234,88,12,0.3);">1-800-AIRFORGE</span></li>
+            <li><a href="mailto:engineering@airforge.com">engineering@airforge.com</a></li>
+            <li style="margin-top: 1rem;">
+              <span style="display: inline-flex; gap: 0.5rem; align-items: center; border: 1px solid #334155; padding: 6px 12px; border-radius: var(--radius-pill); font-size: 0.75rem;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                OSHA Compliant Design
+              </span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        &copy; 2026 AirForge Industrial Systems. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <button id="backToTop" class="back-to-top" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M12 19V5M5 12l7-7 7 7"/>
+    </svg>
+  </button>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
